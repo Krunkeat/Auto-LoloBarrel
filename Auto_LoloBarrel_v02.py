@@ -1,33 +1,3 @@
-"""
-import Auto_LoloBarrel_v02
-import importlib
-
-importlib.reload(Auto_LoloBarrel_v02)
-
-
-if __name__ == "__main__":
-    try:
-        ui2.deleteLater()
-    except:
-        pass
-    ui2 = Auto_LoloBarrel_v02.Auto_LoloBarrelUI()
-
-    try:
-        ui2.show()
-    except:
-        ui2.deleteLater()
-
-"""
-
-"""
-    NB:
-    separate the Tag system
-    for the user to edit it through a pref file   csv ?
-
-
-"""
-
-
 import os
 import sys
 import importlib
@@ -41,7 +11,7 @@ from PySide2 import QtWidgets
 from shiboken2 import wrapInstance
 import re
 
-
+# To add e new map or Tag
 pref = {
             "BaseColor": [['Albedo', 'BaseColor', 'BaseColo'], 'outColor', 'baseColor'],
             "Roughness": [['Roughness'], 'outAlpha', 'specularRoughness'],
