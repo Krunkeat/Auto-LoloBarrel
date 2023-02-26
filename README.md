@@ -1,7 +1,8 @@
 # Auto-LoloBarrel
 Auto connect texture based on a tag system in the names
 
-To run in maya : 
+To run in maya: 
+
     import Auto_LoloBarrel_v02
     import importlib
 
