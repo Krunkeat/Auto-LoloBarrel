@@ -415,15 +415,8 @@ class Auto_LoloBarrelUI(QtWidgets.QDialog):
 
         path = self.path.text()
         allpath = self.allpath.isChecked()
-
-
-        # Check for Checkbox state
+            
         AllCheck = self.setAll.isChecked()
-        if AllCheck:
-            Check = True
-        else:
-            for key in self.mapDict:
-                Check = self.mapDict[key][0].isChecked()
 
         DisplacementCheck = self.setDisplacement.isChecked()
 
@@ -466,6 +459,12 @@ class Auto_LoloBarrelUI(QtWidgets.QDialog):
                 self.map = 'skip'
 
                 for mapDict in self.mapDict:
+                    # Check for Checkbox state
+                    if AllCheck:
+                        Check = True
+                    else:
+                        Check = self.mapDict[mapDict][0].isChecked()
+                        
                     tag_list = self.mapDict[mapDict][1]
                     mapOut = self.mapDict[mapDict][2]
                     map = self.mapDict[mapDict][3]
