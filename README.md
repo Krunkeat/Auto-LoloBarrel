@@ -22,3 +22,4 @@ To run in maya:
             ui2.deleteLater()
 
 
+![image](https://github.com/Krunkeat/Auto-LoloBarrel/assets/50023258/4b2d9e53-d0d7-4d6b-add3-f86a3a268f3e)
